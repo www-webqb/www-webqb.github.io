@@ -1,263 +1,805 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>胡耀鹏</title>
-			<link href="css/bootstrap.css" rel="stylesheet">
-			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Peak Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
-</head>
-<body>
-<!-- banner部分 -->
-<div id="home" class="banner">
-	<div class="container">
-		<div class="banner-grids">
-			<div class="col-md-4 navigation">
-				<div class="nav-left">
-					<div class="grid__item color-4">
-						<a class="link link--kumya" href="#home"><span data-letters="简介">简介</span></a>
-					</div>
-				</div>
-				<div class="nav-right">
-						<span class="menu"><img src="images/menu.png" alt="" /></span>
-							<nav class="cl-effect-1">
-								<ul class="nav1">
-									<li><a class="scroll" href="#home">我</a></li>
-									<li><a class="scroll" href="#about">关于我</a></li>
-									<li><a class="scroll" href="#portfolio">我的作品</a></li>
-									<li><a class="scroll" href="#services">技能</a></li>
-									<li><a class="scroll" href="#contact">联系方式</a></li>
-								</ul>
-							</nav>
-							<!-- script for menu -->
-							<script> 
-								$( "span.menu" ).click(function() {
-								$( "ul.nav1" ).slideToggle( 300, function() {
-								 // Animation complete.
-								});
-								});
-							</script>
-							<!-- //script for menu -->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
 
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="col-md-8 banner-image text-center">
-				<img src="images/11.jpg" alt=""/>
-			</div>
-			<div class="clearfix"></div>
+	<head>
+		<title>胡耀鹏个人主页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="templatemo">
+		<meta charset="UTF-8">
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- CSS Bootstrap & Custom -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="css/templatemo_misc.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link href="css/templatemo_style.css" rel="stylesheet" media="screen">
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="images/ico/favicon.ico">
+
+		<!-- JavaScripts -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/modernizr.js"></script>
+		<!--[if lt IE 8]>
+    <![endif]-->
+	</head>
+
+	<body>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<div class="bg-image"></div>
+		<div class="overlay-bg"></div>
+
+		<div class="container language-select visible-md visible-lg">
+			<!-- /.row -->
 		</div>
-	</div>
-</div>
-<!-- //banner -->
-<!-- about -->
-<div id="about" class="about">
-	<div class="container">
-		<div class="about-info">
-				<h3>关于我</h3>
-				<h4>工作经历</h4>
-				<p>我毕业于辽宁工程技术大学，毕业以后从事的就是互联网工作。有相关的工作经验，曾经就职于山西资海科技有限公司，山西百度龙采科技集团等等。</p>
-		</div>
-		<div class="about-grids">
-		   	<div class="col-md-6 about-grid">
-		   		<h4>相关项目</h4>
-		   		<p>南山文化旅游有限公司整站，天猫，华为，苹果，贪吃蛇游戏等等</p>
-		   	</div>
-		   	<div class="col-md-6 about-grid">
-		   		<h4>目标</h4>
-		   		<p>想让自己成为传说中的大神，可以随心所欲的去做自己喜欢的效果。提高自己的能力</p>
-		   	</div>
-		   	<div class="clearfix"> </div>
-		</div>   
-	</div>
-</div>
-<!-- //about -->
-<!-- my skills -->
-<div id="services" class="services">
-	<div class="our-skills">
-		<div class="container">
-			<div class="skill-info">
-				<h2>我的技能</h2>
-			</div>
-			<div class="skill-grids">
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-1"></div>
-						<p>网页设计/node.js/Angular.js</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-2"></div>
-						<p>HTML/CSS/HTML5/CSS3</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-3"></div>
-						<p>javascript/jQuery</p>
-					</div>
-					<div class="col-md-3 skills-grid text-center">
-						<div class="circle" id="circles-4"></div>
-						<p>Bootstrap/Sass/less</p>
-					</div>
-					<div class="clearfix"> </div>
-			</div>
-		</div>	
-	</div>
-</div>
-<!-- //my skills -->
-<div id="portfolio" class="gallery">
-		<div class="container">
-			
-			<h3>我的相关作品</h3>
-			<section>
-				<ul id="da-thumbs" class="da-thumbs">
+		<!-- /.language-select -->
+
+		<!-- This one in here is responsive menu for tablet and mobiles -->
+		<div class="responsive-navigation visible-sm visible-xs">
+			<a href="#" class="menu-toggle-btn">
+				<i class="fa fa-bars fa-2x"></i>
+			</a>
+			<div class="responsive_menu">
+				<ul class="main_menu">
 					<li>
-						<a href="https://www-webqb.github.io/huawei/">
-							<img src="images/44.png" alt=""/>
-						</a>
+						<a class="show-1 homebutton" href="#"><i class="fa fa-home"></i>主页</a>
 					</li>
 					<li>
-						<a href="https://www-webqb.github.io/goodne/">
-							<img src="images/45.png" alt=""/>
-						</a>
+						<a class="show-2" href="#"><i class="fa fa-group"></i>关于我</a>
 					</li>
 					<li>
-						<a href="https://www-webqb.github.io/tcs/">
-							<img src="images/55.png" alt=""/>
-						</a>
-					</li>
-					<li>	
-						<a href="https://www-webqb.github.io/ytw/" >
-							<img src="images/66.png" alt="" />
-						</a>
-					</li>
-					<li>	
-						<a href="https://www-webqb.github.io/music/" >
-							<img src="images/77.png" alt="" />
-						</a>
-					</li>
-					<li>	
-						<a href="https://www-webqb.github.io/todo/" >
-							<img src="images/78.png" alt="" />
-						</a>
+						<a class="show-3" href="#"><i class="fa fa-briefcase"></i>我的作品</a>
 					</li>
 					<li>
-						<a href="https://www-webqb.github.io/dzyx/" >
-							<img src="images/713.png" alt=""/>
-						</a>
+						<a class="show-4" href="#"><i class="fa fa-cogs"></i>我的技能</a>
 					</li>
 					<li>
-						<a href="https://www-webqb.github.io/pg/">
-							<img src="images/759.png" alt=""/>
-						</a>
+						<a class="show-5" href="#"><i class="fa fa-globe"></i>联系我</a>
 					</li>
-					<li>
-						<a href="">
-							<img src="images/5.31 3D (1).jpg" alt="" />
-						</a>
-					</li>
-					<li>
-						<a href="" >
-							<img src="images/5.31 3D (2).jpg" alt="" />
-						</a>
-					</li>
-					<li>
-						<a href="" >
-							<img src="images/5.31 3D (3).jpg" alt="" />
-						</a>
-					</li>
-					<li>
-						<a href="" >
-							<img src="images/5.31 3D (4).jpg" alt="" />
-						</a>
-					</li>
-					<li>
-						<a href="" >
-							<img src="images/5.31 3D (5).jpg" alt="" />
-						</a>
-					</li>
-					<div class="clearfix"> </div>
 				</ul>
-			</section>
-				
-        </div>	
-</div>
-<!--//gallery-->
-<!-- get-in -->
-<div id="contact" class="get-in-touch">
-	<div class="container">
-		<div class="get-info text-center">
-			<h3>Choose me</h3>
-			<h4><i>等候您的佳音</i></h4>
-			<p>希望您可以给我一个机会，相信我不会让您失望的。我特别希望被您的公司录用，录用我将是您一声最明珠的选择。或许我不是最闪耀的新星，但我一定会是那个埋头苦干的那个</p>
-		</div>
-	</div>
-</div>
-<!-- //get-in -->
-<!-- contact-us -->
-<div class="contact-us">
-	<div class="container">
-		<div class="contact-grids">
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon">地址</span></div>
-				<p>山西省太原市五一广场面粉厂宿舍二单元4楼</p>
+				<!-- /.main_menu -->
 			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon">邮箱</span></div>
-				<p><a href="mailto:info@example.com">1360002709@qq.com</a></p>
-			</div>
-			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"><span class="glyphicon">联系方式</span></div>
-				<p>+18035189975</p>
-			</div>
-			<div class="clearfix"></div>
+			<!-- /.responsive_menu -->
 		</div>
-		<div class="contact-info">
-			<form>
-				<input type="text" placeholder="名字" required>
-				<input type="text" placeholder="邮箱" required>
-				<input type="text" placeholder="主题" required>
-				<textarea placeholder="你的信息" required></textarea>
-				<input type="submit" value="提交">
-			</form>
-		</div>
-	</div>
-</div>
-<!-- //contact-us -->
-<!-- footer -->
-<div class="copy-right">
-	<div class="container">
-		<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="">个人网站</a></p>
-	</div>
-</div>
-<!-- footer -->
-<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
-</body>
-</html>
+		<!-- /responsive_navigation -->
+        <script src="js/jquery.lightbox.js"></script>
+		<div class="main-content">
+			<div class="container">
+				<div class="row">
 
+					<!-- Static Menu -->
+					<div class="col-md-2 visible-md visible-lg">
+						<div class="main_menu">
+							<ul class="menu">
+								<li>
+									<a class="show-1 homebutton" href="#" data-toggle="tooltip" data-original-title="主页"><i class="fa fa-home"></i></a>
+								</li>
+								<li>
+									<a class="show-2" href="#" data-toggle="tooltip" data-original-title="关于我"><i class="fa fa-user"></i></a>
+								</li>
+								<li>
+									<a class="show-3" href="#" data-toggle="tooltip" data-original-title="我的作品"><i class="fa fa-briefcase"></i></a>
+								</li>
+								<li>
+									<a class="show-4" href="#" data-toggle="tooltip" data-original-title="我的技能"><i class="fa fa-cog"></i></a>
+								</li>
+								<li>
+									<a class="show-5" href="#" data-toggle="tooltip" data-original-title="联系我"><i class="fa fa-globe"></i></a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.main-menu -->
+					</div>
+					<!-- /.col-md-2 -->
+
+					<!-- Begin Content -->
+					<div class="col-md-10">
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="templatemo_logo">
+									<a href="#">
+										<img src="images/23.jpg" alt="Genius">
+									</a>
+								</div>
+								<!-- /.logo -->
+							</div>
+							<!-- /.col-md-12 -->
+						</div>
+						<!-- /.row -->
+
+						<div id="menu-container">
+
+							<div id="menu-1" class="homepage">
+								<div class="row">
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/10.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/10.png" alt="Image 1">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/11.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/11.png" alt="Image 2">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/12.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/12.png" alt="Image 3">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/33.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/33.png" alt="Image 4">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/44.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/44.png" alt="Image 5">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/45.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/45.png" alt="Image 6">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/55.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/55.png" alt="Image 7">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/66.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/66.png" alt="Image 8">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<div class="portfolio-item">
+											<div class="overlay">
+												<a href="images/gallery/429.png" data-rel="lightbox">
+													<i class="fa fa-expand"></i>
+												</a>
+											</div>
+											<img src="images/gallery/429.png" alt="Image 9">
+										</div>
+										<!-- /.portfolio-item -->
+									</div>
+									<!-- /.col-md-4 -->
+								</div>
+								<!-- /.row -->
+							</div>
+							<!-- /.homepage -->
+
+							<div id="menu-2" class="content about-us">
+								<div class="page-header">
+									<h2 class="page-title">关于我</h2>
+								</div>
+								<!-- /.page-header -->
+								<div class="content-inner">
+									<div class="row">
+										<div class="col-md-7">
+											<h3 class="widget-title">工作经历</h3>
+											<p>毕业于辽宁工程技术大学，毕业以后从事的就是互联网工作。有相关的工作经验，曾经就职于山西资海科技集团，山西优逸客科技有限公司等等。</p>
+											<p>目标是想让自己成为传说中的大神，可以随心所欲的去做自己喜欢的效果。提高自己的能力</p>
+										</div>
+										<!-- /.col-md-7 -->
+										<!-- /.col-md-5 -->
+									</div>
+									<!-- /.row -->
+									<div class="our-team">
+										<div class="row">
+											<div class="col-md-12">
+												<h3 class="widget-title">自我展示</h3>
+											</div>
+											<!-- /.col-md-12 -->
+										</div>
+										<!-- /.row -->
+										<div class="row">
+											<div class="col-md-4 col-sm-6">
+												<div class="team-member">
+													<div class="member-thumb">
+														<img src="images/11.jpg" alt="">
+													</div>
+													<div class="member-infos">
+														<h4 class="member-name">姓名：胡耀鹏</h4>
+														<span class="member-role">年龄：24</span>
+														<p class="member-desc">web前端工程师</p>
+														
+													</div>
+												</div>
+											</div>
+											<!-- /.col-md-4 -->
+											<!-- /.col-md-4 -->
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.our-team -->
+								</div>
+								<!-- /.content-inner -->
+							</div>
+							<!-- /.about-us -->
+
+							<div id="menu-3" class="content our-gallery">
+								<div class="page-header">
+									<h2 class="page-title">我的作品</h2>
+								</div>
+								<!-- /.page-header -->
+								<div class="content-inner">
+									<div class="row">
+										<div class="col-md-6">
+											<h3 class="widget-title">我的项目</h3>
+										</div>
+										<!-- /.col-md-6 -->
+										<div class="col-md-6">
+											<div class="filter-work pull-right">
+												<a href="#nogo" class="toggle-filter">筛选</a>
+												<ul class="filter-controls controls">
+													<li class="filter" data-filter="all">显示所有</li>
+													<li class="filter" data-filter="branding">web前端作品</li>
+													<li class="filter" data-filter="graphic">平面设计</li>
+													<li class="filter" data-filter="nature">微信小程序</li>
+												</ul>
+											</div>
+											<!-- /.filter-work -->
+										</div>
+										<!-- /.col-md-6 -->
+									</div>
+									<!-- /.row -->
+									<div class="row">
+										<div id="Grid">
+											<div class="col-md-4 col-sm-6 mix graphic">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/wzt/">
+														     <img src="images/gallery/10.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">五子棋</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-md-4 col-sm-6 mix branding">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/huawei/">
+														   <img src="images/gallery/44.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">华为临摹</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/tcs/">
+														     <img src="images/gallery/55.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">贪吃蛇小游戏</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-md-4 col-sm-6 mix branding">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/ytw/">
+														    <img src="images/gallery/66.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">银泰网临摹</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-md-4 col-sm-6 mix graphic">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/dzyx/">
+														   <img src="images/gallery/713.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">打字游戏</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix graphic">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/pg/">
+														   <img src="images/gallery/759.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">苹果官网临摹</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix graphic">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/tianmao/">
+														   <img src="images/gallery/429.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">天猫官网临摹</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix graphic">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/music/">
+														   <img src="images/gallery/77.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">music自设计app</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix graphic">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<a href="https://www-webqb.github.io/todo/">
+														   <img src="images/gallery/78.png" alt="">
+														</a>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">todo自设计app</h4>
+														<span class="gallery-category">web前端作品</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/11.png" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/11.png" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">微信小程序计算器</h4>
+														<span class="gallery-category">微信小程序</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/12.png" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/12.png" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">微信小程序知乎日报</h4>
+														<span class="gallery-category">微信小程序</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/1.jpg" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/1.jpg" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">ps项目</h4>
+														<span class="gallery-category">平面设计</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/2.jpg" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/2.jpg" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">ps项目</h4>
+														<span class="gallery-category">平面设计</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/3.jpg" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/3.jpg" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">ps项目</h4>
+														<span class="gallery-category">平面设计</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/4.jpg" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/4.jpg" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">ps项目</h4>
+														<span class="gallery-category">平面设计</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<div class="col-md-4 col-sm-6 mix nature">
+												<div class="gallery-item">
+													<div class="gallery-thumb">
+														<img src="images/gallery/5.jpg" alt="">
+														<div class="overlay-g">
+															<a href="images/gallery/5.jpg" data-rel="lightbox" class="fa fa-search"></a>
+														</div>
+													</div>
+													<!-- /.gallery-thumb -->
+													<div class="gallery-content">
+														<h4 class="gallery-title">ps项目</h4>
+														<span class="gallery-category">平面设计</span>
+													</div>
+													<!-- /.gallery-content -->
+												</div>
+												<!-- /.gallery-item -->
+											</div>
+											<!-- /.col-md-4 -->
+										</div>
+										<!-- /#Grid -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.content-inner -->
+
+							</div>
+							<!-- /.our-gallery -->
+
+							<div id="menu-4" class="content">
+								<div class="page-header">
+									<h2 class="page-title">我的技能</h2>
+								</div>
+								<!-- /.page-header -->
+								<div class="content-inner">
+									<div class="row">
+										<div class="col-md-12">
+											<h3 class="widget-title">Web前端工程师必备专业技能</h3>
+										</div>
+										<!-- /.col-md-12 -->
+									</div>
+									<!-- /.row -->
+									<div class="row services">
+										<div class="col-md-4 col-sm-6">
+											<div class="service">
+												<div class="header">
+													<div class="header-bg"></div>
+													<div class="service-header">
+														<div class="icon">
+															<i class="fa fa-heart-o"></i>
+														</div>
+														<h4 class="service-title">HTML5 CSS3</h4>
+													</div>
+												</div>
+												<div class="body">使用HTML5的另一个好处就是它可以增加更多的功能。对于HTML5的功能性问题，我们从全球几个主流站点对它的青睐就可以看出。社交网络大亨Facebook已经推出他们期待已久的基于HTML5的iPad应用平台，潘多拉也推出他们基于HTML5的音乐播放器的新版本。游戏平台 Zynga也在推出了三款新的在移动设备浏览器上运行的基于HTML5的游戏等等</div>
+											</div>
+										</div>
+										<!-- /.col-md-4 -->
+										<div class="col-md-4 col-sm-6">
+											<div class="service">
+												<div class="header">
+													<div class="header-bg"></div>
+													<div class="service-header">
+														<div class="icon">
+															<i class="fa fa-flask"></i>
+														</div>
+														<h4 class="service-title">Javascript</h4>
+													</div>
+												</div>
+												<div class="body">脚本语言。JavaScript是一种解释型的脚本语言,C、C++等语言先编译后执行,而JavaScript是在程序的运行过程中逐行进行解释。</div>
+											</div>
+										</div>
+										<!-- /.col-md-4 -->
+										<div class="col-md-4 col-sm-6">
+											<div class="service">
+												<div class="header">
+													<div class="header-bg"></div>
+													<div class="service-header">
+														<div class="icon">
+															<i class="fa fa-money"></i>
+														</div>
+														<h4 class="service-title">jQuery</h4>
+													</div>
+												</div>
+												<div class="body">具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器，如IE 6.0+、FF 1.5+、Safari 2.0+、Opera 9.0+等。</div>
+											</div>
+										</div>
+										<!-- /.col-md-4 -->
+										<div class="col-md-4 col-sm-6">
+											<div class="service">
+												<div class="header">
+													<div class="header-bg"></div>
+													<div class="service-header">
+														<div class="icon">
+															<i class="fa fa-eye"></i>
+														</div>
+														<h4 class="service-title">Bootstrap</h4>
+													</div>
+												</div>
+												<div class="body">Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷.它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目.国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</div>
+											</div>
+										</div>
+										<!-- /.col-md-4 -->
+										<div class="col-md-4 col-sm-6">
+											<div class="service">
+												<div class="header">
+													<div class="header-bg"></div>
+													<div class="service-header">
+														<div class="icon">
+															<i class="fa fa-mobile-phone"></i>
+														</div>
+														<h4 class="service-title">Angular.js/Ajax</h4>
+													</div>
+												</div>
+												<div class="body">Angular.js：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等</br>Ajax：在不通过刷新页面的前提下，通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。</div>
+											</div>
+										</div>
+										<!-- /.col-md-4 -->
+										<div class="col-md-4 col-sm-6">
+											<div class="service">
+												<div class="header">
+													<div class="header-bg"></div>
+													<div class="service-header">
+														<div class="icon">
+															<i class="fa fa-cogs"></i>
+														</div>
+														<h4 class="service-title">node.js/Sass</h4>
+													</div>
+												</div>
+												<div class="body">Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</br>SASS是一种CSS的开发工具，提供了许多便利的写法，大大节省了设计者的时间，使得CSS的开发，变得简单和可维护。</div>
+											</div>
+										</div>
+										<!-- /.col-md-4 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.content-inner -->
+
+							</div>
+							<!-- /.services -->
+
+							<div id="menu-5" class="content">
+								<div class="page-header">
+									<h2 class="page-title">留言</h2>
+								</div>
+								<!-- /.page-header -->
+								<div class="content-inner">
+									<div class="row">
+										<div class="col-md-8">
+											<h3 class="widget-title">请您联系我</h3>
+											<p>如果您认为我符合您的要求的话，请您留下你的联系方式。</p>
+											<div class="row contact-form">
+												<div class="col-md-4">
+													<label for="name-id">您的姓名:</label>
+													<input name="name-id" type="text" id="name-id" maxlength="40">
+												</div>
+												<div class="col-md-4">
+													<label for="email-id">邮箱:</label>
+													<input name="email-id" type="text" id="email-id" maxlength="40">
+												</div>
+												<div class="col-md-4">
+													<label for="subject-id">联系方式:</label>
+													<input name="subject-id" type="text" id="subject-id" maxlength="60">
+												</div>
+											</div>
+											<!-- /.contact-form -->
+											<p class="full-row">
+												<label for="message">请留言:</label>
+												<textarea name="message" id="message" rows="6"></textarea>
+											</p>
+											<input class="mainBtn" type="submit" name="" value="提交">
+										</div>
+										<!-- /.col-md-8 -->
+										<div class="col-md-4">
+											<div class="information">
+												<h3 class="widget-title">我的联系方式</h3>
+												<ul class="our-location">
+													<li><span><i class="fa fa-map-marker"></i>地址:</span>山西省太原市五一广场面粉厂宿舍二单元4楼</li>
+													<li><span><i class="fa fa-map-marker"></i>电话:</span>18035189975</li>
+													<li><span><i class="fa fa-map-marker"></i>邮箱:</span>
+														<a href="mailto:info@company.com">18035189975@163.com</a>
+													</li>
+												</ul>
+											</div>
+											<!-- /.information -->
+											<div class="google-map">
+												<h3 class="widget-title">地图</h3>
+												<div class="contact-map">
+													<div class="google-map-canvas" id="map-canvas" style="height: 200px;">
+													</div>
+												</div>
+												<!-- /.contact-map -->
+											</div>
+											<!-- /.google-map -->
+										</div>
+										<!-- /.col-md-4 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.content-inner -->
+
+							</div>
+							<!-- /.stay-in-touch -->
+
+							<!-- /.site-footer -->
+
+						</div>
+						<!-- /.content-holder -->
+
+					</div>
+					<!-- /.col-md-10 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.main-content -->
+
+		
+		
+		<script src="js/templatemo_custom.js"></script>
+		<script>
+			function initialize() {
+				var mapOptions = {
+					zoom: 15,
+					center: new google.maps.LatLng(16.832179, 96.134976)
+				};
+
+				var map = new google.maps.Map(document.getElementById('map-canvas'),
+					mapOptions);
+			}
+
+			function loadScript() {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+					'callback=initialize';
+				document.body.appendChild(script);
+			}
+		</script>
+
+	</body>
+
+</html>
